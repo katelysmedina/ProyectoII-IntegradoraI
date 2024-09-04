@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: transparent;
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1002;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.navbar-logo {
+  height: auto;
+  width: 120px;
+  object-fit: contain;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  color: #f3f3f3;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.navbar-links a:hover {
+  color: #e67e22;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar-icons li {
+  margin-left: 15px;
+}
+
+.navbar-icons i {
+  font-size: 18px;
+  color: #f3f3f3;
+  margin-left: 15px;
+}
+
+.navbar-icons a:hover i {
+  color: #e67e22;
+}
+
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1003;
+}
+
+.navbar-toggle span {
+  background: #f3f3f3;
+  border-radius: 3px;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+
+.navbar-menu {
+  display: none;
+  position: fixed;
+  top: 60px; 
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  z-index: 1001;
+  
+}
+
+
+.navbar-menu.active {
+  display: block;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu li {
+  margin: 15px 0;
+}
+
+.navbar-menu a {
+  color: #f3f3f3;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.navbar-menu a:hover {
+  color: #e67e22;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; 
+  }
+
+  .navbar-toggle {
+    display: flex; 
+  }
+}
