@@ -1,0 +1,33 @@
+.container-buildings{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.row-buildings{
+    flex-basis: 100%;
+}
+
+.bannerTitle{
+    background-color: rgb(12, 12, 12);
+    height: 6rem;
+    color: #f3f3f3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.cards{
+    margin-top: 2px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: 25%;
+    display: flex;
+    column-gap: 2px;
+}
