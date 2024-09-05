@@ -1,0 +1,42 @@
+.container-card{
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+}
+
+.card-image{
+    height: 30rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.container-card .card-image{
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.container-card:hover .card-image{
+    transform: scale(1.2);
+}
+
+.card-description{
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    color: #f3f3f3;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 10px;
+    font-weight: 500;
+    z-index: 11;
+    font-size: 20px;
+}
+
+.card-overlay{
+    position: absolute;
+    top: 0px; 
+    left: 0;
+    width: 100%;
+    height: calc(100% - 5px); 
+    background-color: rgba(0, 0, 0, 0.350); 
+    z-index: 10; 
+}
