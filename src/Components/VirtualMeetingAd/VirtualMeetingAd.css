@@ -1,0 +1,87 @@
+.virtual-meeting-ad {
+    background-color: rgb(12, 12, 12); 
+    color: #f3f3f3;
+    padding: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 800px;
+    text-align: left; 
+    gap: 30px; 
+  }
+  
+  .virtual-meeting-content {
+    max-width: 400px; 
+  }
+  
+  .meeting-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .meeting-description {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 30px 0;
+  }
+  
+  .meeting-image {
+    width: 100%;
+    max-width: 450px; 
+    height: auto;
+    margin-left: 50px; 
+    transition: transform 0.5s ease, opacity 0.5s ease; 
+  }
+  
+  .meeting-image:hover {
+    transform: scale(1.1);
+    opacity: 0.9; 
+  }
+  
+  .meeting-button {
+    background-color: #e67e22; 
+    color: #f3f3f3;
+    font-weight: 500;
+    border: none;
+    padding: 15px 35px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+    letter-spacing: 2px;
+    margin-top: 20px; 
+  }
+  
+  .meeting-button:hover {
+    background-color: #ff6600; 
+  }
+  
+  /* Pantallas pequeñas */
+  @media (max-width: 768px) {
+    .virtual-meeting-ad {
+      flex-direction: column; 
+      align-items: center;
+      text-align: center; 
+      padding: 30px;
+      gap: 20px; 
+    }
+  
+    .virtual-meeting-content {
+      max-width: 100%; 
+      margin: 0;
+    }
+  
+    .meeting-image {
+      margin-left: 0; 
+      margin-top: 20px; 
+      max-width: 100%; 
+    }
+  
+    .meeting-button {
+      margin-top: 20px; 
+    }
+  }
+  
