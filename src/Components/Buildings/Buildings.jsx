@@ -15,7 +15,7 @@ export default function Buildings(){
         },
         {
             source: "img5.jpg",
-            description:"Vive en armonia con la naturaleza"
+            description:"Vive en armonía con la naturaleza"
         },
         {
             source: "img7.jpg",
